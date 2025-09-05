@@ -36,4 +36,14 @@ public class FizzBuzzTest {
         //Then
         assertEquals("Buzz",result);
     }
+    @Test
+    void should_return_fizzbuzz_when_countOff_common_multiple_3_5(){
+        //Given
+        int number=15;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals("FizzBuzz",result);
+    }
 }
