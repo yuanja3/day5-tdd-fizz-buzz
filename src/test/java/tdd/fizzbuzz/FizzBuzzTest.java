@@ -46,4 +46,44 @@ public class FizzBuzzTest {
         //Then
         assertEquals("FizzBuzz",result);
     }
+    @Test
+    void should_return_fizzbuzz_when_countOff_common_multiple_7(){
+        //Given
+        int number=14;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals("Whizz",result);
+    }
+    @Test
+    void should_return_fizzbuzz_when_countOff_common_multiple_3_7(){
+        //Given
+        int number=21;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals("FizzWhizz",result);
+    }
+    @Test
+    void should_return_fizzbuzz_when_countOff_common_multiple_5_7(){
+        //Given
+        int number=35;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals("BuzzWhizz",result);
+    }
+    @Test
+    void should_return_fizzbuzz_when_countOff_common_multiple_3_5_7(){
+        //Given
+        int number=105;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals("FizzBuzzWhizz",result);
+    }
 }
