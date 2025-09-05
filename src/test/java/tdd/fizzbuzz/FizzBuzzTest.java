@@ -1,4 +1,18 @@
 package tdd.fizzbuzz;
 
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class FizzBuzzTest {
+    @Test
+    void should_return_normal_number_when_countOff_normal_number(){
+        //Given
+        int number=1;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //When
+        String result=fizzBuzz.countOff(number);
+        //Then
+        assertEquals(String.valueOf(number),result);
+    }
 }
