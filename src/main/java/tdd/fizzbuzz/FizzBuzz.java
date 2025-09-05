@@ -10,6 +10,7 @@ public class FizzBuzz {
     public static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public String countOff(int number) {
+
         boolean isCommonMultiple3And5 = number % 3 == 0 && number % 5 == 0;
         boolean isMultiple3= number%3==0 ;
         boolean isMultiple5= number%5==0;
